@@ -1,0 +1,28 @@
+﻿@page
+@model WebApplication1.Pages.Shared.ContactosModel
+@{
+    ViewData["Title"] = "Contactos";
+}
+
+<section class="section-intro">
+    <h1>@ViewData["Title"]</h1>
+    <p>Contáctanos, estaremos encantados de ayudarte.</p>
+</section>
+
+<div class="container">
+    <form method="post">
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>

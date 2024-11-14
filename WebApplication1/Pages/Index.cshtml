@@ -1,10 +1,28 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section class="section-intro">
+    <h1>Bienvenido a MiSitioWeb</h1>
+    <p>Explora nuestros servicios, conoce más sobre nosotros y ponte en contacto con nosotros fácilmente.</p>
+</section>
+
+<div class="container">
+    <h2>Nuestros servicios</h2>
+    <div class="service-cards">
+        <div class="card">
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web modernos y funcionales.</p>
+        </div>
+        <div class="card">
+            <h3>Consultoría</h3>
+            <p>Asesoría personalizada para tu negocio.</p>
+        </div>
+        <div class="card">
+            <h3>Marketing Digital</h3>
+            <p>Servicios de marketing para mejorar tu presencia en línea.</p>
+        </div>
+    </div>
 </div>
